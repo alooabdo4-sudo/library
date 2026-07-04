@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المكتبة الرقمية</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #3498db;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .book-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        
+        .book-image {
+            width: 100%;
+            height: 300px;
+            background-color: #ecf0f1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+        }
+        
+        .book-info {
+            padding: 15px;
+        }
+        
+        .book-info h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #2c3e50;
+        }
+        
+        .book-author {
+            color: #7f8c8d;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        .book-description {
+            color: #555;
+            font-size: 13px;
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+        
+        .btn {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📚 المكتبة الرقمية</h1>
+        <p>اكتشف عالم الكتب والمعرفة</p>
+    </header>
+    
+    <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#books">الكتب</a>
+        <a href="#categories">الأقسام</a>
+        <a href="#contact">اتصل بنا</a>
+    </nav>
+    
+    <div class="container">
+        <div class="books-grid">
+            <!-- كتاب 1 -->
+            <div class="book-card">
+                <div class="book-image">📖</div>
+                <div class="book-info">
+                    <h3>الأمير</h3>
+                    <p class="book-author">نيكولو ميكيافيلي</p>
+                    <p class="book-description">كتاب عن فن الحكم والسياسة</p>
+                    <button class="btn">اقرأ الآن</button>
+                </div>
+            </div>
+            
+            <!-- كتاب 2 -->
+            <div class="book-card">
+                <div class="book-image">📚</div>
+                <div class="book-info">
+                    <h3>1984</h3>
+                    <p class="book-author">جورج أورويل</p>
+                    <p class="book-description">رواية ديستوبيا عن مستقبل قاتم</p>
+                    <button class="btn">اقرأ الآن</button>
+                </div>
+            </div>
+            
+            <!-- كتاب 3 -->
+            <div class="book-card">
+                <div class="book-image">📕</div>
+                <div class="book-info">
+                    <h3>الحرب والسلام</h3>
+                    <p class="book-author">ليو تولستوي</p>
+                    <p class="book-description">ملحمة روسية كلاسيكية</p>
+                    <button class="btn">اقرأ الآن</button>
+                </div>
+            </div>
+            
+            <!-- كتاب 4 -->
+            <div class="book-card">
+                <div class="book-image">📗</div>
+                <div class="book-info">
+                    <h3>الفن الخفي</h3>
+                    <p class="book-author">داميان تومسون</p>
+                    <p class="book-description">استكشاف الفنون والثقافة</p>
+                    <button class="btn">اقرأ الآن</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 المكتبة الرقمية. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
