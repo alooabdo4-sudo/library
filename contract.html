@@ -1,1 +1,247 @@
-
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عقد خدمات المكتبة</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 20px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .date-info {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section h2 {
+            color: #2c3e50;
+            font-size: 18px;
+            margin-bottom: 15px;
+            border-right: 4px solid #3498db;
+            padding-right: 10px;
+        }
+        
+        .section p {
+            margin-bottom: 10px;
+            text-align: justify;
+            line-height: 1.8;
+        }
+        
+        .section ul {
+            margin-right: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .section li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        
+        .terms-list {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .signature-section {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #ccc;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .signature-box {
+            text-align: center;
+            width: 45%;
+        }
+        
+        .signature-line {
+            border-top: 1px solid #333;
+            margin-top: 50px;
+            padding-top: 10px;
+            font-size: 14px;
+        }
+        
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+        
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 عقد خدمات المكتبة</h1>
+            <p class="date-info">التاريخ: <span id="today"></span></p>
+        </div>
+        
+        <div class="section">
+            <h2>1. الأطراف المتعاقدة</h2>
+            <p>
+                هذا العقد يتم إبرامه بين المكتبة (الطرف الأول) والعضو/الزائر (الطرف الثاني)، بموجب شروط وأحكام محددة في هذا العقد.
+            </p>
+        </div>
+        
+        <div class="section">
+            <h2>2. الخدمات المقدمة</h2>
+            <p>توفر المكتبة الخدمات التالية:</p>
+            <ul>
+                <li>إمكانية الوصول إلى مجموعة شاملة من الكتب والمراجع</li>
+                <li>خدمات البحث والمساعدة البحثية</li>
+                <li>استعارة الكتب وفقاً للشروط المحددة</li>
+                <li>توفير أماكن هادئة للدراسة والقراءة</li>
+                <li>الوصول إلى الموارد الرقمية والقواعس البيانات</li>
+                <li>خدمات الاستشارة والتوجيه الأكاديمي</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>3. حقوق وواجبات العضو</h2>
+            <p><strong>الحقوق:</strong></p>
+            <ul>
+                <li>الحق في استخدام جميع خدمات المكتبة دون تمييز</li>
+                <li>الحق في الخصوصية والحفاظ على سرية المعلومات الشخصية</li>
+                <li>الحق في تقديم شكاوى واقتراحات</li>
+                <li>الحق في استعادة أي مبالغ دفعت خطأً</li>
+            </ul>
+            <p><strong>الواجبات:</strong></p>
+            <ul>
+                <li>الالتزام بقواعس السلوك والانضباط داخل المكتبة</li>
+                <li>عدم إتلاف أو تشويه الكتب والموارد</li>
+                <li>الحفاظ على الهدوء واحترام الآخرين</li>
+                <li>إعادة الكتب المستعارة في الموعد المحدد</li>
+                <li>دفع الرسوم والغرامات في الوقت المحدد</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>4. شروط الاستعارة</h2>
+            <div class="terms-list">
+                <ul>
+                    <li>مدة الاستعارة: <span class="highlight">14 يوم</span> من تاريخ الاستعارة</li>
+                    <li>عدد الكتب: حد أقصى <span class="highlight">5 كتب</span> في المرة الواحدة</li>
+                    <li>إمكانية التجديد: مرة واحدة فقط إذا لم يتم حجز الكتاب من قبل شخص آخر</li>
+                    <li>الغرامة: <span class="highlight">5 ريال</span> عن كل يوم تأخير</li>
+                    <li>الحد الأقصى للغرامة: <span class="highlight">50 ريال</span> عن الكتاب الواحد</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>5. المسؤولية والتعويض</h2>
+            <p>
+                يتحمل العضو المسؤولية الكاملة عن أي إتلاف أو فقدان للكتب المستعارة. في حالة فقدان أو إتلاف الكتاب بشكل كامل، يجب على العضو تعويض المكتبة بقيمة الكتاب الجديد أو نسخة محدثة منه.
+            </p>
+        </div>
+        
+        <div class="section">
+            <h2>6. إنهاء العضوية</h2>
+            <p>
+                يحق للمكتبة إنهاء عضوية أي شخص في الحالات التالية:
+            </p>
+            <ul>
+                <li>عدم الالتزام بشروط هذا العقد</li>
+                <li>الإضرار المتكرر بممتلكات المكتبة</li>
+                <li>السلوك غير اللائق أو المزعج داخل المكتبة</li>
+                <li>عدم تسديد الغرامات والرسوم المستحقة</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>7. البيانات الشخصية والخصوصية</h2>
+            <p>
+                تتعهد المكتبة بحماية البيانات الشخصية للعضو وعدم مشاركتها مع أطراف ثالثة دون إذن صريح، باستثناء الحالات المنصوص عليها في القانون.
+            </p>
+        </div>
+        
+        <div class="section">
+            <h2>8. القانون الحاكم والنزاعات</h2>
+            <p>
+                يخضع هذا العقد للقوانين المعمول بها في المملكة، وتختص المحاكم المختصة بالنظر في أي نزاعات قد تنشأ عن تطبيق هذا العقد.
+            </p>
+        </div>
+        
+        <div class="section">
+            <h2>9. التعديلات والتحديثات</h2>
+            <p>
+                تحتفظ المكتبة بحق تعديل شروط هذا العقد في أي وقت. سيتم إخطار الأعضاء بأي تعديلات قبل تطبيقها بمدة معقولة.
+            </p>
+        </div>
+        
+        <div class="signature-section">
+            <div class="signature-box">
+                <p><strong>توقيع العضو</strong></p>
+                <div class="signature-line">
+                    الاسم: ________________<br>
+                    التاريخ: ________________
+                </div>
+            </div>
+            <div class="signature-box">
+                <p><strong>توقيع المكتبة</strong></p>
+                <div class="signature-line">
+                    الاسم: ________________<br>
+                    التاريخ: ________________
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // إضافة التاريخ الحالي
+        const today = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('today').textContent = today.toLocaleDateString('ar-SA', options);
+    </script>
+</body>
+</html>
